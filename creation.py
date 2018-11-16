@@ -12,6 +12,11 @@ if __name__ == '__main__':
     np.array([3,1,4,1,5]) # dtype is guessed from value types
     np.array([3,1,4,1,5], dtype=np.float64) # dtype can be specified as an argument.
 
+    # You can create an array from a previous one with different element type...
+    a = np.array([3,1,4,1,5], dtype=np.float64)
+    np.array(a, dtype=np.uint8)
+    a.astype(dtype=np.uint8)
+
     # when a list of sublists is specified, the array will have 2 dimensions...
     np.array([[1,0,0], [0,1,0], [0,0,1]])
 
