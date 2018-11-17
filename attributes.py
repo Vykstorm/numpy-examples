@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     # "buffer" is used as a internal data storage. Points to an object that
     # is responsible of storing array items.
-
+    # a.buffer
 
     # You can print the array in stdout...
     print(a)
