@@ -27,3 +27,12 @@ if __name__ == '__main__':
     np.hstack([a,b])
     np.column_stack([a,b])
     np.concatenate([a,b], axis=1)
+
+    # Also you can repeat an array along some dimension
+    # using the method repeat() instead of vstack, hstack, ...
+    a = np.array([
+        [1, 0],
+        [0, 1]])
+    np.vstack([a,a])
+    np.repeat(a, 2, axis=0)
+    np.repeat(a, 4, axis=1)
