@@ -29,5 +29,6 @@ if __name__ == '__main__':
     # Token "..." can be used when indexing. "..." is equivalent to all needed sequence of semicolons ":" to
     # complete array indexing...
     a = np.arange(0, 27).reshape([3,3,3])
-    a[0,...], a[:,:,0] # is equivalent to a[0,:,:] and a[:,:,0]
+    a[0,...], a[...,0] # is equivalent to a[0,:,:] and a[:,:,0]
     assert (a[0,...] == a[0,:,:]).all() and (a[...,0] == a[:,:,0]).all()
+
